@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<title>Treasure Hunt</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+		        <link rel="shortcut icon" sizes="144x144" type="image/x-icon" href="favicon/14184564_955885404557001_7795093475134835546_n.ico">
+
+
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+
+		<!-- Wrapper fadeInLeftBig-->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						                  <img style="height:150px;width:100pz;margin-top:-80px;"src="images/Untitled-1.png" class="animated fadeInLeftBig" >
+
+						<div class="content">
+							<div class="inner">
+                  <img  class="animated zoomInUp" src="images/Treasure.png" alt="avengers-font" border="0"><br>
+							<img class="animated zoomInUp" src="images/online.png" alt="avengers-font" border="0"><a href="http://juet.ac.in/TechnicalSocieties/CSI"><img class="animated zoomInUp" src="images/csi.png" alt="avengers-font" border="0"></a>
+								<p class="animated zoomInUp"><img src="images/warriors.png" alt="avengers-font" border="0"><?php echo $users['count(Er_no)'] ?> <br> <img src="images/submis.png" alt="avengers-font" border="0"><?php echo $submission['count(count)'] ?></p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro" ><img class="animated rubberBand" style="margin-top:10px;margin-left:-16px;" src="images/loginbut.png" alt="avengers-font" border="0"></a></li>
+								<li><a href="#work"><img  class="animated rubberBand" style="margin-top:10px;margin-left:-6px;" src="images/REGISBUT.png" alt="avengers-font" border="0"></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major"><img src="images/loginmenu.png" alt="avengers-font" border="0"></h2>
+								<p>
+									<form action="login.php" method ="POST">
+       									<div class="form-group">
+      										<label for="disabledTextInput"><img src="images/enroll.png" alt="avengers-font" border="0"></label>
+      										<input type="text" id="disabledTextInput" class="form-control" placeholder="Enrollment Number" name="er_no" required>
+       									</div>
+      									<br>
+										<div class="form-group">
+										<label for="disabledSelect"><img src="images/pass.png" alt="avengers-font" border="0"></label>
+										<input type="password" id="disabledTextInput" class="form-control" placeholder="your Password here" name="psswd" required>
+										</div>
+										<br>
+										<p><?php echo $err_messg ;?></p>
+										<div class="modal-footer">
+											<button type="submit" class="hunt btn btn-default btn-lg btn-block"><img class="animated  tada" src="images/hunt.png" alt="avengers-font" border="0"></button>
+										</div>
+									</form>
+								</p>			
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major"><img src="images/regmenu.png" alt="avengers-font" border="0"></h2>
+								<p>
+								
+								 <form action="Registration.php" method = "POST">
+									<div class="form-group">
+									<label for="disabledTextInput"><img src="images/Fname.png" alt="avengers-font" border="0"></label>
+									<input type="text" id="disabledTextInput" class="form-control" placeholder="First Name" name="f_name" required>
+									</div>
+									<br>
+									<div class="form-group">
+									<label for="disabledSelect"><img src="images/lname.png" alt="avengers-font" border="0"></label>
+									<input type="text" id="disabledTextInput" class="form-control" placeholder="Last name" name="l_name" required>
+									</div>
+									<br>
+									<div class="form-group">
+									<label for="disabledSelect"><img src="images/enro.png" alt="avengers-font" border="0"></label>
+									<input type="text" id="disabledTextInput" class="form-control" placeholder="Enroll No." name="er_no" required>
+									</div>
+									<br>
+									<div class="form-group">
+									<label for="disabledSelect"><img src="images/email.png" alt="avengers-font" border="0"></label>
+									<input type="Email" id="disabledTextInput" class="form-control" placeholder="Email id" name="e_mail" required>
+									</div>
+									<br>
+									<div class="form-group">
+									<label for="disabledSelect"><img src="images/phone.png" alt="avengers-font" border="0"></label>
+									<input type="text" id="disabledTextInput" class="form-control" placeholder="Phone no." name="ph_no" required>
+									</div>
+									<br>
+									<div class="form-group">
+									<label for="disabledSelect"><img src="images/pass.png" alt="avengers-font" border="0"></label>
+									<input type="password" id="disabledTextInput" class="form-control" placeholder="Your Password here" name="psswd" required>
+									</div>
+									<br>
+									<p><?php echo $err_messg_sign; ?></p>
+									<div class="modal-footer">
+										<button type="submit" class="hunt btn btn-default btn-lg btn-block"><img class="animated tada"src="images/hunt.png" alt="avengers-font" border="0"></button>
+									</div>
+  								 </form>	
+								
+								</p>
+						</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright"> <img class="animated lightSpeedIn" src="images/copyright.png" alt="avengers-font" border="0"> </p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="right_click_disable.js"></script>
+	</body>
+</html>
