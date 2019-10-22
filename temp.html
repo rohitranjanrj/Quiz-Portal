@@ -1,128 +1,305 @@
-<html>
-	<head>
-		<title>Treasure Hunt</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-		        <link rel="shortcut icon" sizes="144x144" type="image/x-icon" href="favicon/14184564_955885404557001_7795093475134835546_n.ico">
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hacktoberfest presented by DigitalOcean and DEV</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Hacktoberfest presented by DigitalOcean and DEV">
+    <meta name="description" content="Open source is changing the world – one pull request at a time.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hacktoberfest">
+    <meta name="twitter:creator" content="@hacktoberfest">
+    <meta name="twitter:title" content="Hacktoberfest presented by DigitalOcean and DEV">
+    <meta name="twitter:image" content="https://hacktoberfest.digitalocean.com/assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png">
+    <meta name="twitter:url" content="https://hacktoberfest.digitalocean.com/">
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Hacktoberfest presented by DigitalOcean and DEV">
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website">
+    <meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US">
+    <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Hacktoberfest">
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Open source is changing the world – one pull request at a time.">
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://hacktoberfest.digitalocean.com/">
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://hacktoberfest.digitalocean.com/assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png">
 
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-2e022469fd44e4816b264a368d0457329a08b173aa768ce74d7e48f1036142e3.png" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="SF9Nu8US5oiaw8GIRqsewKqhL0ngQ3hpXVV9rKCAWRg60HVtcJ0/9ld5fUr+z7RCh2JujqL+KOwEz7TadWPurw==" />
+    
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" media="all" href="/assets/application-d380d435e6a4c773faeea4b2d7a987b8b453dd383ad04753eec615575150ba88.css" data-turbolinks-track="reload" />
+    <link rel="stylesheet" href="https://assets.digitalocean.com/cookieConsent/cookieConsent.css">
+    <script src="/assets/application-e1d5cac7b77b3646095c4f8d249504d476588a5a2894bac24e2b063aac70fb20.js"></script>
+    <script>
+  var airbrake = new airbrakeJs.Client({
+    projectId: "244344",
+    projectKey: "706287fc6c288d10169d2a8d38577941"
+  });
 
-		<!-- Wrapper fadeInLeftBig-->
-			<div id="wrapper">
+  airbrake.addFilter(function(notice) {
+    notice.context.environment = "production-js";
+    return notice;
+  });
+</script>
+    <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    analytics.load('on5tkWRozncTh5P5dyA1cVsyrkGgvpvU', (document.cookie.indexOf('cookieconsent_status=dismiss') > -1 ? {} : { integrations: { All: false, 'Segment.io': true}}));
+    analytics.page();
+    }}();
+</script>
 
-				<!-- Header -->
-					<header id="header">
-						                  <img style="height:150px;width:100pz;margin-top:-80px;"src="images/Untitled-1.png" class="animated fadeInLeftBig" >
+  </head>
+  <body>
+  <div class="top-bgs">
+    <header>
+  <nav class="navbar" id="navbar">
+    <a href="/"><img id="header-logo" src="/assets/logo-hf19-header-8245176fe235ab5d942c7580778a914110fa06a23c3d55bf40e2d061809d8785.svg" alt="Hacktoberfest Logo" width="475" ></a>
+    <ul class="navbar-end">
+      <li><a class=" navLink" href="/">home</a></li>
+      <li><a class=" navLink" href="/details">details</a></li>
+      <li class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+          <a class=" navLink" href="/events">Events</a>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item navLink" href="/events">view all events</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item navLink" href="/eventkit">event kit</a>
+          </div>
+        </div>
+      </li>
+      <li><a class=" navLink" href="/faq">faqs</a></li>
+        <li><a class="active button button-small navLink" href="/profile">profile</a></li>
+    </ul>
+  </nav>
+</header>
 
-						<div class="content">
-							<div class="inner">
-                  <img  class="animated zoomInUp" src="images/Treasure.png" alt="avengers-font" border="0"><br>
-							<img class="animated zoomInUp" src="images/online.png" alt="avengers-font" border="0"><a href="http://juet.ac.in/TechnicalSocieties/CSI"><img class="animated zoomInUp" src="images/csi.png" alt="avengers-font" border="0"></a>
-								<p class="animated zoomInUp"><img src="images/warriors.png" alt="avengers-font" border="0"><?php echo $users['count(Er_no)'] ?> <br> <img src="images/submis.png" alt="avengers-font" border="0"><?php echo $submission['count(count)'] ?></p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro" ><img class="animated rubberBand" style="margin-top:10px;margin-left:-16px;" src="images/loginbut.png" alt="avengers-font" border="0"></a></li>
-								<li><a href="#work"><img  class="animated rubberBand" style="margin-top:10px;margin-left:-6px;" src="images/REGISBUT.png" alt="avengers-font" border="0"></a></li>
-							</ul>
-						</nav>
-					</header>
+    <div class='container profile'>
+  <div class="profile-container">
+    <div class='user-section'>
+      <div class="level">
+        <div class="level-left">
+          <div class="avatar">
+            <figure class='image'>
+              <img class="is-rounded" src="https://github.com/rohitranjanrj.png?size=150" />
+            </figure>
+          </div>
+          <h2 class='username title is-2'>rohitranjanrj </h2>
+        </div>
+        <div class="level-right">
+          <p class='progress-msg'>YOUR PROGRESS</p>
+          <div class="progress-bar progress-state-2">
+  <div class="progress-block"></div>
+  <div class="progress-block"></div>
+  <div class="progress-block"></div>
+  <div class="progress-block"></div>
+</div>
 
-				<!-- Main -->
-					<div id="main">
+        </div>
+      </div>
+    </div>
+    <div class="hacktoberfest-results-box">
+    </div>
+      <div class="container box">
+        <div class="timeline-container">
+    <h3 class="title is-3">Your contributions</h3><br/>
+    <table class="table is-narrow is-fullwidth">
+      <tbody>
+          <tr>
+            <td class="icon-block">
+                <div class="icon-box">
+                  <div class="pending-box">
+                    <img src="/assets/pending-2cf6c9d163a615f7255fc216fe3a989ca099ba100c5d7cec3b3d24e981897b98.png" />
+                  </div>
+                </div>
+            </td>
+            <td>
+              <div>
+                <div class="timeline-date">
+                    <div class="icon-box">
+                      <div class="pending-box">
+                        <img src="/assets/pending-2cf6c9d163a615f7255fc216fe3a989ca099ba100c5d7cec3b3d24e981897b98.png" />
+                      </div>
+                    </div>
+                  <p>October 04, 2019 19:20<br/></p>
+                </div>
+                <h4 class="title is-4">
+                  You submitted <a href="https://github.com/rohitranjanrj/Minor-Project/pull/3">Revert &quot;Update signUp.html&quot;</a> to rohitranjanrj/Minor-Project<br/>
+                </h4>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="icon-block">
+                <div class="icon-box">
+                  <div class="pending-box">
+                    <img src="/assets/pending-2cf6c9d163a615f7255fc216fe3a989ca099ba100c5d7cec3b3d24e981897b98.png" />
+                  </div>
+                </div>
+            </td>
+            <td>
+              <div>
+                <div class="timeline-date">
+                    <div class="icon-box">
+                      <div class="pending-box">
+                        <img src="/assets/pending-2cf6c9d163a615f7255fc216fe3a989ca099ba100c5d7cec3b3d24e981897b98.png" />
+                      </div>
+                    </div>
+                  <p>October 04, 2019 19:21<br/></p>
+                </div>
+                <h4 class="title is-4">
+                  You submitted <a href="https://github.com/rohitranjanrj/Minor-Project/pull/4">Revert &quot;Title of the page added&quot;</a> to rohitranjanrj/Minor-Project<br/>
+                </h4>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+    <div class="legend box has-text-white">
+      <h4 class="title is-4">Legend</h4>
+      <div>
+        <div class="icon-name">
+          <div class="icon-box">
+            <div class="pending-box">
+              <img src="/assets/pending-2cf6c9d163a615f7255fc216fe3a989ca099ba100c5d7cec3b3d24e981897b98.png" />
+            </div>
+          </div>
+          <p>Pending</p>
+        </div>
+        <p>
+          We're waiting for you to reach four or more pull requests, or your PR is currently within the review period.
+        </p>
+      </div>
+      <div>
+        <div class="icon-name">
+          <div class="icon-box">
+            <div class="ineligible-box">
+              <img src="/assets/ineligible-df799cf489727ac619ae5ee80a4dec91d90ed36a0b885e648f549f2aa75a9c14.png" />
+            </div>
+          </div>
+          <p>Invalid</p>
+        </div>
+        <p>
+          Your PR has been labeled as "invalid" by a maintainer and won't count toward winning Hacktoberfest.
+        </p>
+      </div>
+      <div>
+        <div class="icon-name">
+          <div class="icon-box">
+            <div class="spammy-box">
+              <img src="/assets/spam-e898bd6660fab8cabe426741b3a4c00bb4eb4abb8555e0cddcc0985f533e6b84.png" />
+            </div>
+          </div>
+          <p>Ineligible Repository</p>
+        </div>
+        <p>
+          Your PR was submitted to a repository that we've excluded from Hacktoberfest as it doesn't align with our core
+          values.
+        </p>
+      </div>
+      <div>
+        <div class="icon-name">
+          <div class="icon-box">
+            <div class="eligible-box">
+              <img src="/assets/eligible-af7b42f46d1c2ad64ab98b3248dd636b2a439aedfa09c467703cdb5f1944d00a.png" />
+            </div>
+          </div>
+          <p>Eligible</p>
+        </div>
+        <p>
+          Good job! Your PR has passed the review period and counts toward completing the Hacktoberfest challenge!
+        </p>
+      </div>
+      <div>
+        <div class="icon-name">
+          <div class="icon-box">
+            <div class="bonus-box">
+              <img src="/assets/bonus-1998dae891af0f855134776e271fbadaced2e82cf52f4e631327ece505fad10e.png" />
+            </div>
+          </div>
+          <p>Bonus</p>
+        </div>
+        <p>Outstanding! You’ve gone above and beyond this Hacktoberfest.</p>
+      </div>
+    </div>
+</div>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major"><img src="images/loginmenu.png" alt="avengers-font" border="0"></h2>
-								<p>
-									<form action="login.php" method ="POST">
-       									<div class="form-group">
-      										<label for="disabledTextInput"><img src="images/enroll.png" alt="avengers-font" border="0"></label>
-      										<input type="text" id="disabledTextInput" class="form-control" placeholder="Enrollment Number" name="er_no" required>
-       									</div>
-      									<br>
-										<div class="form-group">
-										<label for="disabledSelect"><img src="images/pass.png" alt="avengers-font" border="0"></label>
-										<input type="password" id="disabledTextInput" class="form-control" placeholder="your Password here" name="psswd" required>
-										</div>
-										<br>
-										<p><?php echo $err_messg ;?></p>
-										<div class="modal-footer">
-											<button type="submit" class="hunt btn btn-default btn-lg btn-block"><img class="animated  tada" src="images/hunt.png" alt="avengers-font" border="0"></button>
-										</div>
-									</form>
-								</p>			
-							</article>
+      </div>
+    <a class="button" href="/logout">Log out @rohitranjanrj</a>
+  </div>
+  <div class="box report-spam-cont">
+     <h5 class="title is-5">Have you seen a repository that you don't think aligns with the <a href="/details">Hacktoberfest values</a>? Please <a href="/report">report it to us</a> so we can take a look.  </h5>
+   </div>
+</div>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major"><img src="images/regmenu.png" alt="avengers-font" border="0"></h2>
-								<p>
-								
-								 <form action="Registration.php" method = "POST">
-									<div class="form-group">
-									<label for="disabledTextInput"><img src="images/Fname.png" alt="avengers-font" border="0"></label>
-									<input type="text" id="disabledTextInput" class="form-control" placeholder="First Name" name="f_name" required>
-									</div>
-									<br>
-									<div class="form-group">
-									<label for="disabledSelect"><img src="images/lname.png" alt="avengers-font" border="0"></label>
-									<input type="text" id="disabledTextInput" class="form-control" placeholder="Last name" name="l_name" required>
-									</div>
-									<br>
-									<div class="form-group">
-									<label for="disabledSelect"><img src="images/enro.png" alt="avengers-font" border="0"></label>
-									<input type="text" id="disabledTextInput" class="form-control" placeholder="Enroll No." name="er_no" required>
-									</div>
-									<br>
-									<div class="form-group">
-									<label for="disabledSelect"><img src="images/email.png" alt="avengers-font" border="0"></label>
-									<input type="Email" id="disabledTextInput" class="form-control" placeholder="Email id" name="e_mail" required>
-									</div>
-									<br>
-									<div class="form-group">
-									<label for="disabledSelect"><img src="images/phone.png" alt="avengers-font" border="0"></label>
-									<input type="text" id="disabledTextInput" class="form-control" placeholder="Phone no." name="ph_no" required>
-									</div>
-									<br>
-									<div class="form-group">
-									<label for="disabledSelect"><img src="images/pass.png" alt="avengers-font" border="0"></label>
-									<input type="password" id="disabledTextInput" class="form-control" placeholder="Your Password here" name="psswd" required>
-									</div>
-									<br>
-									<p><?php echo $err_messg_sign; ?></p>
-									<div class="modal-footer">
-										<button type="submit" class="hunt btn btn-default btn-lg btn-block"><img class="animated tada"src="images/hunt.png" alt="avengers-font" border="0"></button>
-									</div>
-  								 </form>	
-								
-								</p>
-						</article>
+  </div>
+  <footer class="footer">
+    <div class="social level">
+      <div class="level-left">
+        <div class="line-br">
+          <span class="line-br-1">-</span>
+          <span class="line-br-2">-</span>
+        </div>
+        <h2 class="title is-2">Spread the word!</h2>
+        <div class="footer-social-links">
+          <a class="grow-shadow" href="https://www.facebook.com/sharer/sharer.php?u=https://hacktoberfest.digitalocean.com/">
+            <svg width="19" height="37" viewBox="0 0 19 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.41406 36.5H12.0234V20.3984H17.1562L18 14H12.0234V9.57031C12.0234 8.58594 12.1641 7.8125 12.5859 7.32031C13.0078 6.75781 13.9219 6.47656 15.1875 6.47656H18.5625V0.78125C17.2969 0.640625 15.6094 0.5 13.6406 0.5C11.1094 0.5 9.14062 1.27344 7.66406 2.75C6.11719 4.22656 5.41406 6.26562 5.41406 8.9375V14H0V20.3984H5.41406V36.5Z" fill="white"/>
+</svg>
 
-					</div>
+            <span>Facebook</span>
+          </a>
+          <a class="grow-shadow" href="https://ctt.ac/c5WeF">
+          <svg width="36" height="31" viewBox="0 0 36 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.2734 8.1875C33.6797 7.13281 34.9453 5.86719 36 4.32031C34.5938 4.95312 33.1875 5.375 31.7812 5.51562C33.3281 4.53125 34.4531 3.19531 35.0156 1.4375C33.5391 2.28125 31.9922 2.91406 30.3047 3.19531C29.6016 2.49219 28.7578 1.92969 27.8438 1.50781C26.9297 1.08594 25.9453 0.875 24.8906 0.875C23.5547 0.875 22.3594 1.22656 21.2344 1.85938C20.1094 2.5625 19.1953 3.47656 18.5625 4.60156C17.8594 5.72656 17.5781 6.99219 17.5781 8.25781C17.5781 8.82031 17.5781 9.38281 17.7188 9.94531C14.6953 9.80469 11.8828 9.10156 9.21094 7.69531C6.53906 6.35938 4.35938 4.53125 2.53125 2.21094C1.82812 3.40625 1.47656 4.67188 1.47656 5.9375C1.47656 7.20312 1.75781 8.39844 2.39062 9.45312C2.95312 10.5781 3.79688 11.4219 4.78125 12.125C3.58594 12.125 2.46094 11.7734 1.47656 11.1406V11.2812C1.47656 13.0391 2.03906 14.5859 3.16406 15.9219C4.28906 17.3281 5.69531 18.1719 7.38281 18.5234C6.67969 18.6641 6.04688 18.7344 5.41406 18.7344C4.99219 18.7344 4.5 18.7344 4.07812 18.6641C4.5 20.1406 5.34375 21.3359 6.60938 22.3203C7.875 23.3047 9.28125 23.7266 10.9688 23.7266C8.22656 25.8359 5.13281 26.8906 1.75781 26.8906C1.05469 26.8906 0.492188 26.8906 0 26.8203C3.375 29.0703 7.17188 30.125 11.3203 30.125C15.6094 30.125 19.4062 29.0703 22.7812 26.8203C25.8047 24.8516 28.1953 22.25 29.8828 18.875C31.5 15.7812 32.3438 12.4766 32.3438 9.10156C32.3438 8.67969 32.2734 8.39844 32.2734 8.1875Z" fill="white"/>
+</svg>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright"> <img class="animated lightSpeedIn" src="images/copyright.png" alt="avengers-font" border="0"> </p>
-					</footer>
+            <span>Twitter</span>
+          </a>
+        </div>
+      </div>
+      <div class="level-right">
+          <img id="footer-logo" src="/assets/logo-hf19-full-10f3c000cea930c76acc1dedc516ea7118b95353220869a3051848e45ff1d656.svg" alt="Hacktoberfest Logo">
+      </div>
+    </div>
+    <div class="footer-end">
+      <div class="footer-logos">
+      <a href="https://www.digitalocean.com"><img src="/assets/do-footer-logo-30ab9883fb2ecbc97a13bcae3d86e7b4b673d299f56138773c57066ff54250af.svg" alt="DigitalOcean Logo" ></a>
+      <p> + </p>
+      <a href="https://www.dev.to"><img class="dev-logo" src="/assets/dev-footer-logo-ea477fc64b6fa2c8164f710a4b42b450d80cf53b7607322647c2ae7c2a04ada0.svg" alt="Dev Logo"></a>
+      </div>
+      <p>© 2019 DigitalOcean, LLC. All rights reserved.</p>
+    </div>
+</footer>
 
-			</div>
+  <!-- Header Logo Tilt -->
+  <script type="text/javascript">
+  	VanillaTilt.init(document.getElementById("header-logo"), {
+  		max: 5,
+  		speed: 300
+    });
+    // <!-- Footer Logo Tilt -->
+  	VanillaTilt.init(document.getElementById("footer-logo"), {
+  		max: 7,
+  		speed: 300
+  	});
+  </script>
 
-		<!-- BG -->
-			<div id="bg"></div>
+    <script type="text/javascript">
+      window.cookieDomain = ".digitalocean.com";
+    </script>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="right_click_disable.js"></script>
-	</body>
+  <script src="https://assets.digitalocean.com/cookieConsent/cookieConsent.js"></script>
+
+    <script>
+      window.addEventListener('cookieconsent_statuschange', function(e) {
+        if(e.detail.status === 'deny') { return; }
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KHWBBT');
+      });
+    </script>
+
+  </body>
 </html>
